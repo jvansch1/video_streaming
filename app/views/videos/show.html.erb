@@ -1,6 +1,13 @@
 <div>
   <h1>Videos</h1>
-  <h2><%= @video.name %></h2>
-  <h2><%= @video.description %></h2>
-  <a href="https://jvs-video-dev.s3.amazonaws.com/Waterfall+-+6998.mp4">Video</a>
+  <h2><%= @video_record.name %></h2>
+  <h2><%= @video_record.description %></h2>
+<!--
+  <video width="250" height="250">
+    <source src="/../../../../Videos/Waterfall - 6998.mp4" type="video/mp4">
+    <source src="/../../../../Videos/Waterfall - 6998.mp4" type="video/ogg">
+    <source src="/app/assets/videos/Waterfall_6998.mp4" type="video/mp4">
+  </video> -->
+
+  <%= video_tag(["Waterfall_6998.mp4"], autoplay: true )%>
 </div>
