@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Setup
 
-Things you may want to cover:
+## Installing Rails
 
-* Ruby version
+This app uses rails 6.0.0.rc1. You can install and get a tutorial at http://installrails.com/
 
-* System dependencies
+## Installing gems
 
-* Configuration
+Once Rails is installed type `rails -v` in your console to ensure that `rails 6.0.0.rc1` shows up.
 
-* Database creation
+Once you see this you should be able to run `bundle install` to install all the gems present in `Gemfile`. If you get an error along the lines of `bundler cannot be found`, run `gem install bundler` and then try again.
 
-* Database initialization
+## Starting server
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To start the server, type `bundle exec rails s` in your console. If this is successful, visit `localhost:3000`. If you see a message that says `Yay! You're on rails` then everything has worked.
