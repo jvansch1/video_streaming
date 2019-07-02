@@ -20,6 +20,8 @@ class VideosController < ApplicationController
       bucket: 'jvs-video-dev',
       key: 'Waterfall - 6998.mp4',
     })
+    # @video_blob = @video.body.read
+    @video_blob = @video.body.read.gsub("\u0000", '')
   end
 
 end
