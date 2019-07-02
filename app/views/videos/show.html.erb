@@ -2,12 +2,12 @@
   <h1>Videos</h1>
   <h2><%= @video_record.name %></h2>
   <h2><%= @video_record.description %></h2>
-<!--
-  <video width="250" height="250">
-    <source src="/../../../../Videos/Waterfall - 6998.mp4" type="video/mp4">
-    <source src="/../../../../Videos/Waterfall - 6998.mp4" type="video/ogg">
-    <source src="/app/assets/videos/Waterfall_6998.mp4" type="video/mp4">
+
+
+  <!-- <video width="250" height="250">
+    <source src="#{@video.body.string} type="video/mp4">
+    <source src=<% "#{@video_record.s3_url}" %> type="video/mp4">
   </video> -->
 
-  <%= video_tag(["Waterfall_6998.mp4"], autoplay: true )%>
+<%= video_tag(@video_url, "autoplay" => true )%>
 </div>

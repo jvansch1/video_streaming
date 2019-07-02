@@ -1,0 +1,7 @@
+<div>
+  <% @videos.each do |video| %>
+    <h1><%= video.name %></h1>
+    <h1><%= video.description %></h1>
+    <%= video_tag(video.s3_url, "autoplay" => true )%>
+  <% end %>
+</div>
