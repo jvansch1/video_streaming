@@ -2,12 +2,13 @@
   <h1>Videos</h1>
   <h2><%= @video_record.name %></h2>
   <h2><%= @video_record.description %></h2>
+  <img src=></img>
 
 
   <!-- <video width="250" height="250">
     <source src="#{@video.body.string} type="video/mp4">
     <source src=<% "#{@video_record.s3_url}" %> type="video/mp4">
   </video> -->
-
-<%= video_tag(@video_url, "autoplay" => true )%>
+<%= image_tag('https://jvs-video-dev.s3.amazonaws.com/stock.jpg') %>
+<%= video_tag(@video_url, "autoplay" => true)%>
 </div>
