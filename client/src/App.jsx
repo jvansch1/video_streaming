@@ -1,5 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Home from './components/home.jsx'
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+import Home from './components/home.jsx';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+const App = () => {
+  return (
+    <Router>
+      <Route path="/home" exact component={Home} />
+    </Router>
+  )
+}
+
+export default App;
